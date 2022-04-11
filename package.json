@@ -37,7 +37,7 @@
     "dev": "unbuild --stub",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --push --tag && pnpm publish",
-    "start": "esno src/index.ts",
+    "start": "rimraf myFile.xlsx && esno src/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
